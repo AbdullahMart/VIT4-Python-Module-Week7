@@ -126,7 +126,10 @@ class Ui_MainWindow(object):
         self.login_tabWidget.setCurrentIndex(1)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
         
-        self.admin_login_pushButton.clicked.connect(self.myFunction)
+        self.admin_login_pushButton.clicked.connect(self.admin_login_clicked)
+        self.admin_cancel_pushButton.clicked.connect(self.admin_cancel_clicked)
+        self.user_login_pushButton.clicked.connect(self.user_login_clicked)
+        self.user_cancel_pushButton.clicked.connect(self.user_cancel_clicked)
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
@@ -157,9 +160,18 @@ class Ui_MainWindow(object):
         self.admin_user_name_label.setText(_translate("MainWindow", "User Name"))
         self.login_tabWidget.setTabText(self.login_tabWidget.indexOf(self.admin_login), _translate("MainWindow", "Admin"))
 
-    def myFunction(self):
-    # Bu işlev, test düğmesine tıklandığında çağrılacak işlemi gerçekleştirir.
-        print("Test düğmesine tıklandı!")
+    def admin_login_clicked(self):
+        print("Admin Login düğmesine tıklandı!")
+
+    def admin_cancel_clicked(self):
+        print("Admin Cancel düğmesine tıklandı()")
+
+
+    def user_login_clicked(self):
+        print("User Login düğmesine tıklandı!")
+
+    def user_cancel_clicked(self):
+        print("User Cancel düğmesine tıklandı()")
         
 if __name__ == "__main__":
     import sys
