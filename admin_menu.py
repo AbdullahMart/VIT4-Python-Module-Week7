@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'login_window.ui'
+# Form implementation generated from reading ui file 'admin_menu.ui'
 #
 # Created by: PyQt6 UI code generator 6.4.2
 #
@@ -9,176 +9,129 @@
 from PyQt6 import QtCore, QtGui, QtWidgets
 
 
-class Ui_MainWindow(object):
-    def setupUi(self, MainWindow):
-        MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(500, 385)
-        MainWindow.setMinimumSize(QtCore.QSize(500, 385))
-        MainWindow.setMaximumSize(QtCore.QSize(500, 385))
-        self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
+class Ui_Admin_menu_MainWindow(object):
+    def setupUi(self, Admin_menu_MainWindow):
+        Admin_menu_MainWindow.setObjectName("Admin_menu_MainWindow")
+        Admin_menu_MainWindow.resize(800, 600)
+        self.centralwidget = QtWidgets.QWidget(parent=Admin_menu_MainWindow)
         self.centralwidget.setObjectName("centralwidget")
-        self.frame_login_main = QtWidgets.QFrame(parent=self.centralwidget)
-        self.frame_login_main.setGeometry(QtCore.QRect(0, 0, 600, 415))
-        self.frame_login_main.setMinimumSize(QtCore.QSize(600, 415))
-        self.frame_login_main.setMaximumSize(QtCore.QSize(600, 415))
-        self.frame_login_main.setAutoFillBackground(False)
-        self.frame_login_main.setStyleSheet("background-color: rgb(255, 255, 255);")
-        self.frame_login_main.setFrameShape(QtWidgets.QFrame.Shape.Panel)
-        self.frame_login_main.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
-        self.frame_login_main.setObjectName("frame_login_main")
-        self.werhere_imaj_label = QtWidgets.QLabel(parent=self.frame_login_main)
-        self.werhere_imaj_label.setGeometry(QtCore.QRect(10, 10, 441, 71))
-        self.werhere_imaj_label.setText("")
-        self.werhere_imaj_label.setPixmap(QtGui.QPixmap("C:/Users/ASUS/Downloads/file.png"))
-        self.werhere_imaj_label.setObjectName("werhere_imaj_label")
-        self.welkomTextEdit = QtWidgets.QTextEdit(parent=self.frame_login_main)
-        self.welkomTextEdit.setGeometry(QtCore.QRect(10, 90, 461, 41))
-        font = QtGui.QFont()
-        font.setPointSize(10)
-        self.welkomTextEdit.setFont(font)
-        self.welkomTextEdit.setStyleSheet("")
-        self.welkomTextEdit.setFrameShape(QtWidgets.QFrame.Shape.NoFrame)
-        self.welkomTextEdit.setObjectName("welkomTextEdit")
-        self.login_tabWidget = QtWidgets.QTabWidget(parent=self.frame_login_main)
-        self.login_tabWidget.setGeometry(QtCore.QRect(30, 130, 421, 191))
-        font = QtGui.QFont()
-        font.setFamily("Comic Sans MS")
-        font.setPointSize(10)
-        font.setBold(False)
-        self.login_tabWidget.setFont(font)
-        self.login_tabWidget.setStyleSheet("")
-        self.login_tabWidget.setTabPosition(QtWidgets.QTabWidget.TabPosition.West)
-        self.login_tabWidget.setTabShape(QtWidgets.QTabWidget.TabShape.Rounded)
-        self.login_tabWidget.setObjectName("login_tabWidget")
-        self.user_login = QtWidgets.QWidget()
-        self.user_login.setObjectName("user_login")
-        self.user_login_groupBox = QtWidgets.QGroupBox(parent=self.user_login)
-        self.user_login_groupBox.setGeometry(QtCore.QRect(0, 0, 391, 191))
-        font = QtGui.QFont()
-        font.setFamily("Comic Sans MS")
-        font.setPointSize(10)
-        font.setBold(True)
-        self.user_login_groupBox.setFont(font)
-        self.user_login_groupBox.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
-        self.user_login_groupBox.setObjectName("user_login_groupBox")
-        self.user_login_pushButton = QtWidgets.QPushButton(parent=self.user_login_groupBox)
-        self.user_login_pushButton.setGeometry(QtCore.QRect(130, 140, 75, 24))
-        self.user_login_pushButton.setObjectName("user_login_pushButton")
-        self.user_cancel_pushButton = QtWidgets.QPushButton(parent=self.user_login_groupBox)
-        self.user_cancel_pushButton.setGeometry(QtCore.QRect(220, 140, 75, 24))
-        self.user_cancel_pushButton.setObjectName("user_cancel_pushButton")
-        self.user_name_label = QtWidgets.QLabel(parent=self.user_login_groupBox)
-        self.user_name_label.setGeometry(QtCore.QRect(20, 40, 71, 16))
-        self.user_name_label.setObjectName("user_name_label")
-        self.password_label = QtWidgets.QLabel(parent=self.user_login_groupBox)
-        self.password_label.setGeometry(QtCore.QRect(20, 80, 71, 16))
-        self.password_label.setObjectName("password_label")
-        self.user_name_textEdit = QtWidgets.QTextEdit(parent=self.user_login_groupBox)
-        self.user_name_textEdit.setGeometry(QtCore.QRect(120, 30, 181, 31))
-        self.user_name_textEdit.setObjectName("user_name_textEdit")
-        self.password_textEdit = QtWidgets.QTextEdit(parent=self.user_login_groupBox)
-        self.password_textEdit.setGeometry(QtCore.QRect(120, 70, 181, 31))
-        self.password_textEdit.setObjectName("password_textEdit")
-        self.login_tabWidget.addTab(self.user_login, "")
-        self.admin_login = QtWidgets.QWidget()
-        self.admin_login.setObjectName("admin_login")
-        self.admin_login_groupBox = QtWidgets.QGroupBox(parent=self.admin_login)
-        self.admin_login_groupBox.setGeometry(QtCore.QRect(10, 0, 381, 181))
-        font = QtGui.QFont()
-        font.setFamily("Comic Sans MS")
-        font.setPointSize(10)
-        font.setBold(True)
-        self.admin_login_groupBox.setFont(font)
-        self.admin_login_groupBox.setStyleSheet("")
-        self.admin_login_groupBox.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
-        self.admin_login_groupBox.setObjectName("admin_login_groupBox")
-        self.admin_login_pushButton = QtWidgets.QPushButton(parent=self.admin_login_groupBox)
-        self.admin_login_pushButton.setGeometry(QtCore.QRect(110, 140, 75, 24))
-        self.admin_login_pushButton.setObjectName("admin_login_pushButton")
-        self.admin_cancel_pushButton = QtWidgets.QPushButton(parent=self.admin_login_groupBox)
-        self.admin_cancel_pushButton.setGeometry(QtCore.QRect(200, 140, 75, 24))
-        self.admin_cancel_pushButton.setObjectName("admin_cancel_pushButton")
-        self.admin_user_name_textEdit = QtWidgets.QTextEdit(parent=self.admin_login_groupBox)
-        self.admin_user_name_textEdit.setGeometry(QtCore.QRect(120, 30, 181, 31))
-        self.admin_user_name_textEdit.setObjectName("admin_user_name_textEdit")
-        self.admin_password_label = QtWidgets.QLabel(parent=self.admin_login_groupBox)
-        self.admin_password_label.setGeometry(QtCore.QRect(20, 80, 71, 16))
-        self.admin_password_label.setObjectName("admin_password_label")
-        self.admin_password_textEdit = QtWidgets.QTextEdit(parent=self.admin_login_groupBox)
-        self.admin_password_textEdit.setGeometry(QtCore.QRect(120, 70, 181, 31))
-        self.admin_password_textEdit.setStyleSheet("\n"
-"selection-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(160, 160, 160, 255), stop:1 rgba(255, 255, 255, 255));")
-        self.admin_password_textEdit.setObjectName("admin_password_textEdit")
-        self.admin_user_name_label = QtWidgets.QLabel(parent=self.admin_login_groupBox)
-        self.admin_user_name_label.setGeometry(QtCore.QRect(20, 40, 71, 16))
-        self.admin_user_name_label.setObjectName("admin_user_name_label")
-        self.login_tabWidget.addTab(self.admin_login, "")
-        MainWindow.setCentralWidget(self.centralwidget)
-        self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 500, 22))
+        self.frame = QtWidgets.QFrame(parent=self.centralwidget)
+        self.frame.setGeometry(QtCore.QRect(-10, 0, 791, 581))
+        self.frame.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
+        self.frame.setObjectName("frame")
+        self.werhere_image_label = QtWidgets.QLabel(parent=self.frame)
+        self.werhere_image_label.setGeometry(QtCore.QRect(200, 0, 451, 131))
+        self.werhere_image_label.setText("")
+        self.werhere_image_label.setPixmap(QtGui.QPixmap("../../../../Downloads/IMG-20240507-WA0026.jpg"))
+        self.werhere_image_label.setObjectName("werhere_image_label")
+        self.Check_pushButton = QtWidgets.QPushButton(parent=self.frame)
+        self.Check_pushButton.setGeometry(QtCore.QRect(90, 180, 75, 24))
+        self.Check_pushButton.setStyleSheet("\n"
+"QPushButton:hover {\n"
+"\n"
+"                  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0,157, 255, 255), stop:1 rgba(30, 206, 255, 255));\n"
+"                  color: rgb(255, 255, 255);\n"
+"                  }\n"
+"\n"
+"QPushButton:pressed {\n"
+"                    background-color: rgb(255, 255, 255);\n"
+"                    color: rgb(0, 0, 255);\n"
+"                    }\n"
+"")
+        self.Check_pushButton.setObjectName("Check_pushButton")
+        self.pushButton = QtWidgets.QPushButton(parent=self.frame)
+        self.pushButton.setGeometry(QtCore.QRect(220, 170, 75, 24))
+        self.pushButton.setStyleSheet("\n"
+"QPushButton:hover {\n"
+"\n"
+"                  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0,157, 255, 255), stop:1 rgba(30, 206, 255, 255));\n"
+"                  color: rgb(255, 255, 255);\n"
+"                  }\n"
+"\n"
+"QPushButton:pressed {\n"
+"                    background-color: rgb(255, 255, 255);\n"
+"                    color: rgb(0, 0, 255);\n"
+"                    }\n"
+"")
+        self.pushButton.setObjectName("pushButton")
+        self.pushButton_3 = QtWidgets.QPushButton(parent=self.frame)
+        self.pushButton_3.setGeometry(QtCore.QRect(370, 170, 75, 24))
+        self.pushButton_3.setStyleSheet("\n"
+"QPushButton:hover {\n"
+"\n"
+"                  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0,157, 255, 255), stop:1 rgba(30, 206, 255, 255));\n"
+"                  color: rgb(255, 255, 255);\n"
+"                  }\n"
+"\n"
+"QPushButton:pressed {\n"
+"                    background-color: rgb(255, 255, 255);\n"
+"                    color: rgb(0, 0, 255);\n"
+"                    }\n"
+"")
+        self.pushButton_3.setObjectName("pushButton_3")
+        self.pushButton_4 = QtWidgets.QPushButton(parent=self.frame)
+        self.pushButton_4.setGeometry(QtCore.QRect(550, 180, 75, 24))
+        self.pushButton_4.setStyleSheet("\n"
+"QPushButton:hover {\n"
+"\n"
+"                  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0,157, 255, 255), stop:1 rgba(30, 206, 255, 255));\n"
+"                  color: rgb(255, 255, 255);\n"
+"                  }\n"
+"\n"
+"QPushButton:pressed {\n"
+"                    background-color: rgb(255, 255, 255);\n"
+"                    color: rgb(0, 0, 255);\n"
+"                    }\n"
+"")
+        self.pushButton_4.setObjectName("pushButton_4")
+        self.tableWidget = QtWidgets.QTableWidget(parent=self.frame)
+        self.tableWidget.setGeometry(QtCore.QRect(70, 260, 651, 171))
+        self.tableWidget.setObjectName("tableWidget")
+        self.tableWidget.setColumnCount(4)
+        self.tableWidget.setRowCount(0)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(3, item)
+        Admin_menu_MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(parent=Admin_menu_MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 22))
         self.menubar.setObjectName("menubar")
-        MainWindow.setMenuBar(self.menubar)
-        self.statusbar = QtWidgets.QStatusBar(parent=MainWindow)
+        Admin_menu_MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(parent=Admin_menu_MainWindow)
         self.statusbar.setObjectName("statusbar")
-        MainWindow.setStatusBar(self.statusbar)
+        Admin_menu_MainWindow.setStatusBar(self.statusbar)
 
-        self.retranslateUi(MainWindow)
-        self.login_tabWidget.setCurrentIndex(1)
-        QtCore.QMetaObject.connectSlotsByName(MainWindow)
-        
-        self.admin_login_pushButton.clicked.connect(self.admin_login_clicked)
-        self.admin_cancel_pushButton.clicked.connect(self.admin_cancel_clicked)
-        self.user_login_pushButton.clicked.connect(self.user_login_clicked)
-        self.user_cancel_pushButton.clicked.connect(self.user_cancel_clicked)
+        self.retranslateUi(Admin_menu_MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(Admin_menu_MainWindow)
 
-
-    def retranslateUi(self, MainWindow):
+    def retranslateUi(self, Admin_menu_MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.welkomTextEdit.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-
-  
-
-
-
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"hr { height: 1px; border-width: 0; }\n"
-"li.unchecked::marker { content: \"\\2610\"; }\n"
-"li.checked::marker { content: \"\\2612\"; }\n"
-"</style></head><body style=\" font-family:\'Segoe UI\'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:700;\">Welcome to We\'rhere App</span></p></body></html>"))
-        self.user_login_groupBox.setTitle(_translate("MainWindow", "User Login"))
-        self.user_login_pushButton.setText(_translate("MainWindow", "Login"))
-        self.user_cancel_pushButton.setText(_translate("MainWindow", "Cancel"))
-        self.user_name_label.setText(_translate("MainWindow", "User Name"))
-        self.password_label.setText(_translate("MainWindow", "Password"))
-        self.login_tabWidget.setTabText(self.login_tabWidget.indexOf(self.user_login), _translate("MainWindow", "User"))
-        self.admin_login_groupBox.setTitle(_translate("MainWindow", "Admin Login"))
-        self.admin_login_pushButton.setText(_translate("MainWindow", "Login"))
-        self.admin_cancel_pushButton.setText(_translate("MainWindow", "Cancel"))
-        self.admin_password_label.setText(_translate("MainWindow", "Password"))
-        self.admin_user_name_label.setText(_translate("MainWindow", "User Name"))
-        self.login_tabWidget.setTabText(self.login_tabWidget.indexOf(self.admin_login), _translate("MainWindow", "Admin"))
-
-    def admin_login_clicked(self):
-        print("Admin Login düğmesine tıklandı!")
-
-    def admin_cancel_clicked(self):
-        print("Admin Cancel düğmesine tıklandı()")
+        Admin_menu_MainWindow.setWindowTitle(_translate("Admin_menu_MainWindow", "MainWindow"))
+        self.Check_pushButton.setText(_translate("Admin_menu_MainWindow", "Event Check"))
+        self.pushButton.setText(_translate("Admin_menu_MainWindow", "Send Mail"))
+        self.pushButton_3.setText(_translate("Admin_menu_MainWindow", "Back "))
+        self.pushButton_4.setText(_translate("Admin_menu_MainWindow", "Exit"))
+        item = self.tableWidget.horizontalHeaderItem(0)
+        item.setText(_translate("Admin_menu_MainWindow", "Event Name"))
+        item = self.tableWidget.horizontalHeaderItem(1)
+        item.setText(_translate("Admin_menu_MainWindow", "Nieuwe kolom"))
+        item = self.tableWidget.horizontalHeaderItem(2)
+        item.setText(_translate("Admin_menu_MainWindow", "Begin Time"))
+        item = self.tableWidget.horizontalHeaderItem(3)
+        item.setText(_translate("Admin_menu_MainWindow", "Orginizator mail"))
 
 
-    def user_login_clicked(self):
-        print("User Login düğmesine tıklandı!")
-
-    def user_cancel_clicked(self):
-        print("User Cancel düğmesine tıklandı()")
-        
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
+    Admin_menu_MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_Admin_menu_MainWindow()
+    ui.setupUi(Admin_menu_MainWindow)
+    Admin_menu_MainWindow.show()
     sys.exit(app.exec())
