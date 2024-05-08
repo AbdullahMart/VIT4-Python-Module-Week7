@@ -264,17 +264,18 @@ class Ui_MainWindow(object):
 # Butonların Fonsiyonlarının tanımlandığı yer.
 
     def admin_login_clicked(self):
+       
         print("Admin Login düğmesine tıklandı!")
 
     def admin_cancel_clicked(self):
-        print("Admin Cancel düğmesine tıklandı()")
+        print("Admin Cancel düğmesine tıklandı")
 
 
     def user_login_clicked(self):
         print("User Login düğmesine tıklandı!")
 
     def user_cancel_clicked(self):
-        print("User Cancel düğmesine tıklandı()")
+        print("User Cancel düğmesine tıklandı")
 
 
 
