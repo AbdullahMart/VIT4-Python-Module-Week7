@@ -272,7 +272,10 @@ class Ui_MainWindow(object):
 # Butonların Fonsiyonlarının tanımlandığı yer.
 
     def admin_login_clicked(self):
-        print("Admin Login düğmesine tıklandı!")
+        from preference_admin_menu import Ui_admin_pref_men_MainWindow
+        self.MainWindow= QtWidgets.QMainWindow()
+        self.ui =Ui_admin_pref_men_MainWindow()
+        self.ui.setupUi(MainWindow)    
 
     def admin_exit_clicked(self):
         print("Admin exit düğmesine tıklandı")
