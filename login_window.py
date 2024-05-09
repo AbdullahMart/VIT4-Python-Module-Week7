@@ -30,7 +30,7 @@ class Ui_MainWindow(object):
         self.werhere_image_label.setGeometry(QtCore.QRect(20, 30, 471, 71))
         self.werhere_image_label.setStyleSheet("background-color: rgba(255, 255, 255, 0);")
         self.werhere_image_label.setText("")
-        self.werhere_image_label.setPixmap(QtGui.QPixmap("../VsCode_Gitbub/VIT4-Python-Module-Week7/werhere_image.png"))
+        self.werhere_image_label.setPixmap(QtGui.QPixmap("werhere_image.png"))
         self.werhere_image_label.setObjectName("werhere_image_label")
         self.login_tabWidget = QtWidgets.QTabWidget(parent=self.frame_login_main)
         self.login_tabWidget.setGeometry(QtCore.QRect(30, 130, 421, 191))
@@ -219,6 +219,7 @@ class Ui_MainWindow(object):
         self.login_tabWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
+
 # Push Buton tıklama
 
         self.admin_login_pushButton.clicked.connect(self.admin_login_clicked)
@@ -226,9 +227,7 @@ class Ui_MainWindow(object):
         self.user_login_pushButton.clicked.connect(self.user_login_clicked)
         self.user_exit_pushButton.clicked.connect(self.user_exit_clicked)
 
-
-
-def retranslateUi(self, MainWindow):
+    def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.user_login_groupBox.setTitle(_translate("MainWindow", "User Login"))
@@ -269,6 +268,7 @@ def retranslateUi(self, MainWindow):
 "</style></head><body style=\" font-family:\'Segoe UI\'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:700;\">Welcome to</span></p></body></html>"))
 
+
 # Butonların Fonsiyonlarının tanımlandığı yer.
 
     def admin_login_clicked(self):
@@ -283,9 +283,6 @@ def retranslateUi(self, MainWindow):
 
     def user_exit_clicked(self):
         print("User exit düğmesine tıklandı")
-
-
-
 
 
 if __name__ == "__main__":
