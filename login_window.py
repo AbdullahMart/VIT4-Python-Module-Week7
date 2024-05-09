@@ -278,6 +278,7 @@ class Ui_MainWindow(object):
         self.ui.setupUi(MainWindow)    
 
     def admin_exit_clicked(self):
+      
         print("Admin exit düğmesine tıklandı")
 
 
