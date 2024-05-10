@@ -12,15 +12,15 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_applications_page_MainWindow(object):
     def setupUi(self, applications_page_MainWindow):
         applications_page_MainWindow.setObjectName("applications_page_MainWindow")
-        applications_page_MainWindow.resize(1450, 1000)
-        applications_page_MainWindow.setMinimumSize(QtCore.QSize(1450, 1000))
-        applications_page_MainWindow.setMaximumSize(QtCore.QSize(1450, 1000))
+        applications_page_MainWindow.resize(1220, 735)
+        applications_page_MainWindow.setMinimumSize(QtCore.QSize(1220, 735))
+        applications_page_MainWindow.setMaximumSize(QtCore.QSize(1220, 735))
         self.centralwidget = QtWidgets.QWidget(parent=applications_page_MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.frame = QtWidgets.QFrame(parent=self.centralwidget)
-        self.frame.setGeometry(QtCore.QRect(30, 30, 1350, 900))
-        self.frame.setMinimumSize(QtCore.QSize(1350, 900))
-        self.frame.setMaximumSize(QtCore.QSize(1350, 900))
+        self.frame.setGeometry(QtCore.QRect(0, 0, 1200, 700))
+        self.frame.setMinimumSize(QtCore.QSize(1200, 700))
+        self.frame.setMaximumSize(QtCore.QSize(1200, 700))
         font = QtGui.QFont()
         font.setPointSize(14)
         font.setBold(True)
@@ -29,83 +29,83 @@ class Ui_applications_page_MainWindow(object):
         self.frame.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
         self.frame.setObjectName("frame")
         self.Search_pushButton = QtWidgets.QPushButton(parent=self.frame)
-        self.Search_pushButton.setGeometry(QtCore.QRect(70, 171, 111, 41))
+        self.Search_pushButton.setGeometry(QtCore.QRect(9, 164, 111, 41))
         self.Search_pushButton.setStyleSheet("QPushButton:hover {\n"
 "                  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0,157, 255, 255), stop:1 rgba(30, 206, 255, 255));\n"
 "                  color: rgb(255, 255, 255);\n"
 "                  }")
         self.Search_pushButton.setObjectName("Search_pushButton")
         self.Meetings_with_unassigned_mentor_pushButton = QtWidgets.QPushButton(parent=self.frame)
-        self.Meetings_with_unassigned_mentor_pushButton.setGeometry(QtCore.QRect(70, 290, 311, 41))
+        self.Meetings_with_unassigned_mentor_pushButton.setGeometry(QtCore.QRect(9, 283, 311, 41))
         self.Meetings_with_unassigned_mentor_pushButton.setStyleSheet("QPushButton:hover {\n"
 "                  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0,157, 255, 255), stop:1 rgba(30, 206, 255, 255));\n"
 "                  color: rgb(255, 255, 255);\n"
 "                  }")
         self.Meetings_with_unassigned_mentor_pushButton.setObjectName("Meetings_with_unassigned_mentor_pushButton")
         self.Meetings_with_assigned_mentor_pushButton = QtWidgets.QPushButton(parent=self.frame)
-        self.Meetings_with_assigned_mentor_pushButton.setGeometry(QtCore.QRect(70, 230, 231, 41))
+        self.Meetings_with_assigned_mentor_pushButton.setGeometry(QtCore.QRect(9, 223, 231, 41))
         self.Meetings_with_assigned_mentor_pushButton.setStyleSheet("QPushButton:hover {\n"
 "                  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0,157, 255, 255), stop:1 rgba(30, 206, 255, 255));\n"
 "                  color: rgb(255, 255, 255);\n"
 "                  }")
         self.Meetings_with_assigned_mentor_pushButton.setObjectName("Meetings_with_assigned_mentor_pushButton")
         self.Different_records_pushButton = QtWidgets.QPushButton(parent=self.frame)
-        self.Different_records_pushButton.setGeometry(QtCore.QRect(800, 290, 221, 41))
+        self.Different_records_pushButton.setGeometry(QtCore.QRect(700, 280, 221, 41))
         self.Different_records_pushButton.setStyleSheet("QPushButton:hover {\n"
 "                  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0,157, 255, 255), stop:1 rgba(30, 206, 255, 255));\n"
 "                  color: rgb(255, 255, 255);\n"
 "                  }")
         self.Different_records_pushButton.setObjectName("Different_records_pushButton")
         self.All_applications_pushButton = QtWidgets.QPushButton(parent=self.frame)
-        self.All_applications_pushButton.setGeometry(QtCore.QRect(1060, 230, 221, 101))
+        self.All_applications_pushButton.setGeometry(QtCore.QRect(970, 220, 221, 101))
         self.All_applications_pushButton.setStyleSheet("QPushButton:hover {\n"
 "                  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0,157, 255, 255), stop:1 rgba(30, 206, 255, 255));\n"
 "                  color: rgb(255, 255, 255);\n"
 "                  }")
         self.All_applications_pushButton.setObjectName("All_applications_pushButton")
         self.Filtered_Applications_pushButton = QtWidgets.QPushButton(parent=self.frame)
-        self.Filtered_Applications_pushButton.setGeometry(QtCore.QRect(540, 290, 231, 41))
+        self.Filtered_Applications_pushButton.setGeometry(QtCore.QRect(440, 280, 231, 41))
         self.Filtered_Applications_pushButton.setStyleSheet("QPushButton:hover {\n"
 "                  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0,157, 255, 255), stop:1 rgba(30, 206, 255, 255));\n"
 "                  color: rgb(255, 255, 255);\n"
 "                  }")
         self.Filtered_Applications_pushButton.setObjectName("Filtered_Applications_pushButton")
         self.Former_VIT_Check_pushButton = QtWidgets.QPushButton(parent=self.frame)
-        self.Former_VIT_Check_pushButton.setGeometry(QtCore.QRect(540, 231, 231, 41))
+        self.Former_VIT_Check_pushButton.setGeometry(QtCore.QRect(440, 220, 231, 41))
         self.Former_VIT_Check_pushButton.setStyleSheet("QPushButton:hover {\n"
 "                  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0,157, 255, 255), stop:1 rgba(30, 206, 255, 255));\n"
 "                  color: rgb(255, 255, 255);\n"
 "                  }")
         self.Former_VIT_Check_pushButton.setObjectName("Former_VIT_Check_pushButton")
         self.Multiple_records_pushButton = QtWidgets.QPushButton(parent=self.frame)
-        self.Multiple_records_pushButton.setGeometry(QtCore.QRect(800, 231, 221, 41))
+        self.Multiple_records_pushButton.setGeometry(QtCore.QRect(700, 220, 221, 41))
         self.Multiple_records_pushButton.setStyleSheet("QPushButton:hover {\n"
 "                  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0,157, 255, 255), stop:1 rgba(30, 206, 255, 255));\n"
 "                  color: rgb(255, 255, 255);\n"
 "                  }")
         self.Multiple_records_pushButton.setObjectName("Multiple_records_pushButton")
         self.Preferences_pushButton = QtWidgets.QPushButton(parent=self.frame)
-        self.Preferences_pushButton.setGeometry(QtCore.QRect(540, 340, 171, 41))
+        self.Preferences_pushButton.setGeometry(QtCore.QRect(440, 330, 171, 41))
         self.Preferences_pushButton.setStyleSheet("QPushButton:hover {\n"
 "                  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0,157, 255, 255), stop:1 rgba(30, 206, 255, 255));\n"
 "                  color: rgb(255, 255, 255);\n"
 "                  }")
         self.Preferences_pushButton.setObjectName("Preferences_pushButton")
         self.Exit_pushButton = QtWidgets.QPushButton(parent=self.frame)
-        self.Exit_pushButton.setGeometry(QtCore.QRect(1110, 340, 171, 41))
+        self.Exit_pushButton.setGeometry(QtCore.QRect(1020, 330, 171, 41))
         self.Exit_pushButton.setStyleSheet("QPushButton:hover {\n"
 "                  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0,157, 255, 255), stop:1 rgba(30, 206, 255, 255));\n"
 "                  color: rgb(255, 255, 255);\n"
 "                  }")
         self.Exit_pushButton.setObjectName("Exit_pushButton")
         self.lineEdit = QtWidgets.QLineEdit(parent=self.frame)
-        self.lineEdit.setGeometry(QtCore.QRect(540, 170, 741, 41))
+        self.lineEdit.setGeometry(QtCore.QRect(440, 170, 751, 41))
         self.lineEdit.setObjectName("lineEdit")
         self.lineEdit_2 = QtWidgets.QLineEdit(parent=self.frame)
-        self.lineEdit_2.setGeometry(QtCore.QRect(590, 60, 161, 41))
+        self.lineEdit_2.setGeometry(QtCore.QRect(520, 50, 161, 41))
         self.lineEdit_2.setObjectName("lineEdit_2")
         self.tableWidget = QtWidgets.QTableWidget(parent=self.frame)
-        self.tableWidget.setGeometry(QtCore.QRect(70, 399, 1211, 431))
+        self.tableWidget.setGeometry(QtCore.QRect(10, 370, 1181, 321))
         self.tableWidget.setObjectName("tableWidget")
         self.tableWidget.setColumnCount(7)
         self.tableWidget.setRowCount(0)
@@ -125,18 +125,18 @@ class Ui_applications_page_MainWindow(object):
         self.tableWidget.setHorizontalHeaderItem(6, item)
         self.tableWidget.horizontalHeader().setDefaultSectionSize(160)
         self.Werhere = QtWidgets.QLabel(parent=self.frame)
-        self.Werhere.setGeometry(QtCore.QRect(70, 10, 441, 131))
+        self.Werhere.setGeometry(QtCore.QRect(9, 3, 441, 131))
         self.Werhere.setText("")
         self.Werhere.setPixmap(QtGui.QPixmap("werhere_image.png"))
         self.Werhere.setObjectName("Werhere")
         self.Werhere_2 = QtWidgets.QLabel(parent=self.frame)
-        self.Werhere_2.setGeometry(QtCore.QRect(840, 10, 441, 131))
+        self.Werhere_2.setGeometry(QtCore.QRect(750, 0, 441, 131))
         self.Werhere_2.setText("")
         self.Werhere_2.setPixmap(QtGui.QPixmap("werhere_image.png"))
         self.Werhere_2.setObjectName("Werhere_2")
         applications_page_MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=applications_page_MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 1450, 43))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1220, 43))
         self.menubar.setObjectName("menubar")
         applications_page_MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(parent=applications_page_MainWindow)
@@ -187,7 +187,7 @@ class Ui_applications_page_MainWindow(object):
         item = self.tableWidget.horizontalHeaderItem(6)
         item.setText(_translate("applications_page_MainWindow", "Current Status"))
 
-#Transitions and explainations
+     #Transitions and explainations
 
     def Exit_clicked(self):
         from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton
