@@ -144,16 +144,34 @@ class Ui_admin_pref_men_MainWindow(object):
         self.back_menu_pushButton.setText(_translate("admin_pref_men_MainWindow", "Main Menu"))
 
     def application_page_clicked(self):
-        print("Application_page düğmesine tıklandı!")
+        from  applications_page import Ui_applications_page_MainWindow
+        self.MainWindow = QtWidgets.QMainWindow()
+        self.ui = Ui_applications_page_MainWindow()
+        self.ui.setupUi(self.MainWindow) 
+        self.MainWindow.show()
 
     def mentor_interview_clicked(self):
-        print("Mentor interview düğmesine tıklandı!") 
+        from mentor_interview_page import Ui_mentor_interviews_page_MainWindow
+        self.MainWindow = QtWidgets.QMainWindow()
+        self.ui = Ui_mentor_interviews_page_MainWindow()
+        self.ui.setupUi(self.MainWindow) 
+        self.MainWindow.show()
+
 
     def interviews_clicked(self):
-        print("Interviews düğmesine tıklandı!") 
+        from interviews_page import Ui_interviews_page_MainWindow
+        self.MainWindow = QtWidgets.QMainWindow()
+        self.ui = Ui_interviews_page_MainWindow()
+        self.ui.setupUi(self.MainWindow) 
+        self.MainWindow.show() 
 
     def back_menu_clicked(self):
-        print("Back menu düğmesine tıklandı!") 
+        from login_window import Ui_MainWindow
+        self.MainWindow = QtWidgets.QMainWindow()
+        self.ui = Ui_MainWindow()
+        self.ui.setupUi(self.MainWindow) 
+        self.MainWindow.show()
+        
 
     def Exit_clicked(self):
         QApplication.instance().quit()                     
