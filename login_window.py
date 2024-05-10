@@ -7,6 +7,7 @@
 
 
 from PyQt6 import QtCore, QtGui, QtWidgets
+import sys
 
 
 class Ui_MainWindow(object):
@@ -84,9 +85,19 @@ class Ui_MainWindow(object):
         self.user_exit_pushButton.setObjectName("user_exit_pushButton")
         self.user_name_label = QtWidgets.QLabel(parent=self.user_login_groupBox)
         self.user_name_label.setGeometry(QtCore.QRect(20, 40, 71, 16))
+        font = QtGui.QFont()
+        font.setFamily("Comic Sans MS")
+        font.setPointSize(10)
+        font.setBold(True)
+        self.user_name_label.setFont(font)
         self.user_name_label.setObjectName("user_name_label")
         self.password_label = QtWidgets.QLabel(parent=self.user_login_groupBox)
         self.password_label.setGeometry(QtCore.QRect(20, 80, 71, 16))
+        font = QtGui.QFont()
+        font.setFamily("Comic Sans MS")
+        font.setPointSize(10)
+        font.setBold(True)
+        self.password_label.setFont(font)
         self.password_label.setObjectName("password_label")
         self.user_name_textEdit = QtWidgets.QTextEdit(parent=self.user_login_groupBox)
         self.user_name_textEdit.setGeometry(QtCore.QRect(120, 30, 181, 31))
@@ -172,6 +183,11 @@ class Ui_MainWindow(object):
         self.admin_user_name_textEdit.setObjectName("admin_user_name_textEdit")
         self.admin_password_label = QtWidgets.QLabel(parent=self.admin_login_groupBox)
         self.admin_password_label.setGeometry(QtCore.QRect(20, 80, 71, 16))
+        font = QtGui.QFont()
+        font.setFamily("Comic Sans MS")
+        font.setPointSize(10)
+        font.setBold(True)
+        self.admin_password_label.setFont(font)
         self.admin_password_label.setObjectName("admin_password_label")
         self.admin_password_textEdit = QtWidgets.QTextEdit(parent=self.admin_login_groupBox)
         self.admin_password_textEdit.setGeometry(QtCore.QRect(120, 70, 181, 31))
@@ -188,6 +204,11 @@ class Ui_MainWindow(object):
         self.admin_password_textEdit.setObjectName("admin_password_textEdit")
         self.admin_user_name_label = QtWidgets.QLabel(parent=self.admin_login_groupBox)
         self.admin_user_name_label.setGeometry(QtCore.QRect(20, 40, 71, 16))
+        font = QtGui.QFont()
+        font.setFamily("Comic Sans MS")
+        font.setPointSize(10)
+        font.setBold(True)
+        self.admin_user_name_label.setFont(font)
         self.admin_user_name_label.setObjectName("admin_user_name_label")
         self.login_tabWidget.addTab(self.admin_login, "")
         self.welkomTextEdit_2 = QtWidgets.QTextEdit(parent=self.frame_login_main)
@@ -278,7 +299,8 @@ class Ui_MainWindow(object):
         self.ui.setupUi(MainWindow)    
 
     def admin_exit_clicked(self):
-        print("Admin exit düğmesine tıklandı")
+        from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton
+        QApplication.instance().quit()
 
 
     def user_login_clicked(self):
@@ -290,7 +312,8 @@ class Ui_MainWindow(object):
 
 
     def user_exit_clicked(self):
-        print("User exit düğmesine tıklandı")
+        from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton
+        QApplication.instance().quit()
 
 
 if __name__ == "__main__":
