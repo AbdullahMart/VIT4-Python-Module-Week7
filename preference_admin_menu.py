@@ -7,6 +7,7 @@
 
 
 from PyQt6 import QtCore, QtGui, QtWidgets
+from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton
 
 
 class Ui_admin_pref_men_MainWindow(object):
@@ -127,6 +128,12 @@ class Ui_admin_pref_men_MainWindow(object):
         self.retranslateUi(admin_pref_men_MainWindow)
         QtCore.QMetaObject.connectSlotsByName(admin_pref_men_MainWindow)
 
+        self.application_page_pushButton.clicked.connect(self.application_page_clicked)
+        self.mentor_interview_pushButton.clicked.connect(self.mentor_interview_clicked)
+        self.interviews_pushButton.clicked.connect(self.interviews_clicked)
+        self.back_menu_pushButton.clicked.connect(self.back_menu_clicked)
+        self.Exit_pushButton.clicked.connect(self.Exit_clicked)
+
     def retranslateUi(self, admin_pref_men_MainWindow):
         _translate = QtCore.QCoreApplication.translate
         admin_pref_men_MainWindow.setWindowTitle(_translate("admin_pref_men_MainWindow", "                                                          Admin Preference Menu "))
@@ -135,6 +142,21 @@ class Ui_admin_pref_men_MainWindow(object):
         self.Exit_pushButton.setText(_translate("admin_pref_men_MainWindow", "Exit"))
         self.interviews_pushButton.setText(_translate("admin_pref_men_MainWindow", "Interviews"))
         self.back_menu_pushButton.setText(_translate("admin_pref_men_MainWindow", "Main Menu"))
+
+    def application_page_clicked(self):
+        print("Application_page düğmesine tıklandı!")
+
+    def mentor_interview_clicked(self):
+        print("Mentor interview düğmesine tıklandı!") 
+
+    def interviews_clicked(self):
+        print("Interviews düğmesine tıklandı!") 
+
+    def back_menu_clicked(self):
+        print("Back menu düğmesine tıklandı!") 
+
+    def Exit_clicked(self):
+        QApplication.instance().quit()                     
 
 
 if __name__ == "__main__":

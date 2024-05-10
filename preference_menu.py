@@ -7,6 +7,8 @@
 
 
 from PyQt6 import QtCore, QtGui, QtWidgets
+from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton
+
 
 
 class Ui_MainWindow(object):
@@ -125,6 +127,16 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
+        self.applications_pushButton.clicked.connect(self.applications_clicked)
+
+        self.interviews_pushButton.clicked.connect(self.interviews_clicked)
+        
+        self.mentor_meeting_pushButton.clicked.connect(self.mentor_meeting_clicked)
+        self.bact_menu_pushButton.clicked.connect(self.bact_menu_clicked)
+        self.exit_pushButton.clicked.connect(self.exit_clicked)
+
+
+
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
@@ -133,6 +145,21 @@ class Ui_MainWindow(object):
         self.interviews_pushButton.setText(_translate("MainWindow", "Interviews"))
         self.bact_menu_pushButton.setText(_translate("MainWindow", "Back to Menu"))
         self.exit_pushButton.setText(_translate("MainWindow", "Exit"))
+
+    def applications_clicked(self):
+        print("Applications düğmesine tıklandı!")
+
+    def interviews_clicked(self):
+        print("Interview düğmesine tıklandı!") 
+
+    def mentor_meeting_clicked(self):
+        print("Mentor_meeting düğmesine tıklandı!") 
+
+    def bact_menu_clicked(self):
+        print("Back_menu düğmesine tıklandı!") 
+
+    def exit_clicked(self):
+        QApplication.instance().quit()         
 
 
 if __name__ == "__main__":
