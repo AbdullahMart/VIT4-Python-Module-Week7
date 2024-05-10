@@ -258,7 +258,7 @@ class Ui_MainWindow(object):
 "li.unchecked::marker { content: \"\\2610\"; }\n"
 "li.checked::marker { content: \"\\2612\"; }\n"
 "</style></head><body style=\" font-family:\'Segoe UI\'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">copyright@WearehereAcademy-2024</span></p></body></html>"))
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">copyright@WearehereAcademy(2024)</span></p></body></html>"))
         self.welkomTextEdit.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -278,12 +278,16 @@ class Ui_MainWindow(object):
         self.ui.setupUi(MainWindow)    
 
     def admin_exit_clicked(self):
-      
         print("Admin exit düğmesine tıklandı")
 
 
     def user_login_clicked(self):
-        print("User Login düğmesine tıklandı!")
+        from preference_menu import Ui_MainWindow
+        self.MainWindow= QtWidgets.QMainWindow()
+        self.ui =Ui_MainWindow()
+        self.ui.setupUi(MainWindow)          
+        
+
 
     def user_exit_clicked(self):
         print("User exit düğmesine tıklandı")
