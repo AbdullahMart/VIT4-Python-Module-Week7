@@ -7,7 +7,6 @@
 
 
 from PyQt6 import QtCore, QtGui, QtWidgets
-from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton
 
 
 class Ui_admin_pref_men_MainWindow(object):
@@ -22,7 +21,7 @@ class Ui_admin_pref_men_MainWindow(object):
         self.centralwidget = QtWidgets.QWidget(parent=admin_pref_men_MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.admin_preference_menu_frame = QtWidgets.QFrame(parent=self.centralwidget)
-        self.admin_preference_menu_frame.setGeometry(QtCore.QRect(-150, -100, 721, 661))
+        self.admin_preference_menu_frame.setGeometry(QtCore.QRect(-150, -80, 721, 661))
         self.admin_preference_menu_frame.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
         self.admin_preference_menu_frame.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
         self.admin_preference_menu_frame.setObjectName("admin_preference_menu_frame")
@@ -32,9 +31,9 @@ class Ui_admin_pref_men_MainWindow(object):
         self.werhere_image_label.setPixmap(QtGui.QPixmap("werhere_image.png"))
         self.werhere_image_label.setObjectName("werhere_image_label")
         self.application_page_pushButton = QtWidgets.QPushButton(parent=self.admin_preference_menu_frame)
-        self.application_page_pushButton.setGeometry(QtCore.QRect(190, 240, 151, 61))
+        self.application_page_pushButton.setGeometry(QtCore.QRect(190, 230, 151, 31))
         font = QtGui.QFont()
-        font.setPointSize(14)
+        font.setPointSize(12)
         font.setBold(True)
         self.application_page_pushButton.setFont(font)
         self.application_page_pushButton.setStyleSheet("QPushButton:hover {\n"
@@ -49,9 +48,9 @@ class Ui_admin_pref_men_MainWindow(object):
 "                    }")
         self.application_page_pushButton.setObjectName("application_page_pushButton")
         self.mentor_interview_pushButton = QtWidgets.QPushButton(parent=self.admin_preference_menu_frame)
-        self.mentor_interview_pushButton.setGeometry(QtCore.QRect(430, 240, 181, 61))
+        self.mentor_interview_pushButton.setGeometry(QtCore.QRect(190, 290, 151, 31))
         font = QtGui.QFont()
-        font.setPointSize(14)
+        font.setPointSize(12)
         font.setBold(True)
         self.mentor_interview_pushButton.setFont(font)
         self.mentor_interview_pushButton.setStyleSheet("QPushButton:hover {\n"
@@ -66,9 +65,9 @@ class Ui_admin_pref_men_MainWindow(object):
 "                    }")
         self.mentor_interview_pushButton.setObjectName("mentor_interview_pushButton")
         self.Exit_pushButton = QtWidgets.QPushButton(parent=self.admin_preference_menu_frame)
-        self.Exit_pushButton.setGeometry(QtCore.QRect(340, 460, 111, 61))
+        self.Exit_pushButton.setGeometry(QtCore.QRect(210, 470, 91, 31))
         font = QtGui.QFont()
-        font.setPointSize(14)
+        font.setPointSize(12)
         font.setBold(True)
         self.Exit_pushButton.setFont(font)
         self.Exit_pushButton.setStyleSheet("QPushButton:hover {\n"
@@ -83,9 +82,9 @@ class Ui_admin_pref_men_MainWindow(object):
 "                    }")
         self.Exit_pushButton.setObjectName("Exit_pushButton")
         self.interviews_pushButton = QtWidgets.QPushButton(parent=self.admin_preference_menu_frame)
-        self.interviews_pushButton.setGeometry(QtCore.QRect(190, 360, 151, 61))
+        self.interviews_pushButton.setGeometry(QtCore.QRect(190, 350, 151, 31))
         font = QtGui.QFont()
-        font.setPointSize(14)
+        font.setPointSize(12)
         font.setBold(True)
         self.interviews_pushButton.setFont(font)
         self.interviews_pushButton.setStyleSheet("QPushButton:hover {\n"
@@ -100,9 +99,9 @@ class Ui_admin_pref_men_MainWindow(object):
 "                    }")
         self.interviews_pushButton.setObjectName("interviews_pushButton")
         self.back_menu_pushButton = QtWidgets.QPushButton(parent=self.admin_preference_menu_frame)
-        self.back_menu_pushButton.setGeometry(QtCore.QRect(430, 360, 181, 61))
+        self.back_menu_pushButton.setGeometry(QtCore.QRect(190, 410, 151, 31))
         font = QtGui.QFont()
-        font.setPointSize(14)
+        font.setPointSize(12)
         font.setBold(True)
         self.back_menu_pushButton.setFont(font)
         self.back_menu_pushButton.setStyleSheet("QPushButton:hover {\n"
