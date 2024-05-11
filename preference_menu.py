@@ -7,8 +7,6 @@
 
 
 from PyQt6 import QtCore, QtGui, QtWidgets
-from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton
-
 
 
 class Ui_MainWindow(object):
@@ -20,7 +18,7 @@ class Ui_MainWindow(object):
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.preference_menu_frame = QtWidgets.QFrame(parent=self.centralwidget)
-        self.preference_menu_frame.setGeometry(QtCore.QRect(30, 10, 500, 481))
+        self.preference_menu_frame.setGeometry(QtCore.QRect(40, -10, 500, 481))
         self.preference_menu_frame.setMaximumSize(QtCore.QSize(500, 500))
         self.preference_menu_frame.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
         self.preference_menu_frame.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
@@ -31,9 +29,9 @@ class Ui_MainWindow(object):
         self.werhere_logo_label.setPixmap(QtGui.QPixmap("werhere_image.png"))
         self.werhere_logo_label.setObjectName("werhere_logo_label")
         self.applications_pushButton = QtWidgets.QPushButton(parent=self.preference_menu_frame)
-        self.applications_pushButton.setGeometry(QtCore.QRect(0, 140, 131, 61))
+        self.applications_pushButton.setGeometry(QtCore.QRect(10, 140, 131, 31))
         font = QtGui.QFont()
-        font.setPointSize(14)
+        font.setPointSize(12)
         font.setBold(True)
         self.applications_pushButton.setFont(font)
         self.applications_pushButton.setStyleSheet("QPushButton:hover {\n"
@@ -48,9 +46,9 @@ class Ui_MainWindow(object):
 "                    }")
         self.applications_pushButton.setObjectName("applications_pushButton")
         self.mentor_meeting_pushButton = QtWidgets.QPushButton(parent=self.preference_menu_frame)
-        self.mentor_meeting_pushButton.setGeometry(QtCore.QRect(140, 220, 161, 71))
+        self.mentor_meeting_pushButton.setGeometry(QtCore.QRect(10, 200, 131, 31))
         font = QtGui.QFont()
-        font.setPointSize(14)
+        font.setPointSize(12)
         font.setBold(True)
         self.mentor_meeting_pushButton.setFont(font)
         self.mentor_meeting_pushButton.setStyleSheet("QPushButton:hover {\n"
@@ -65,9 +63,9 @@ class Ui_MainWindow(object):
 "                    }")
         self.mentor_meeting_pushButton.setObjectName("mentor_meeting_pushButton")
         self.interviews_pushButton = QtWidgets.QPushButton(parent=self.preference_menu_frame)
-        self.interviews_pushButton.setGeometry(QtCore.QRect(320, 140, 111, 61))
+        self.interviews_pushButton.setGeometry(QtCore.QRect(10, 260, 131, 31))
         font = QtGui.QFont()
-        font.setPointSize(14)
+        font.setPointSize(12)
         font.setBold(True)
         self.interviews_pushButton.setFont(font)
         self.interviews_pushButton.setStyleSheet("QPushButton:hover {\n"
@@ -82,9 +80,9 @@ class Ui_MainWindow(object):
 "                    }")
         self.interviews_pushButton.setObjectName("interviews_pushButton")
         self.bact_menu_pushButton = QtWidgets.QPushButton(parent=self.preference_menu_frame)
-        self.bact_menu_pushButton.setGeometry(QtCore.QRect(0, 340, 131, 51))
+        self.bact_menu_pushButton.setGeometry(QtCore.QRect(10, 320, 131, 31))
         font = QtGui.QFont()
-        font.setPointSize(14)
+        font.setPointSize(12)
         font.setBold(True)
         self.bact_menu_pushButton.setFont(font)
         self.bact_menu_pushButton.setStyleSheet("QPushButton:hover {\n"
@@ -99,9 +97,9 @@ class Ui_MainWindow(object):
 "                    }")
         self.bact_menu_pushButton.setObjectName("bact_menu_pushButton")
         self.exit_pushButton = QtWidgets.QPushButton(parent=self.preference_menu_frame)
-        self.exit_pushButton.setGeometry(QtCore.QRect(320, 340, 111, 51))
+        self.exit_pushButton.setGeometry(QtCore.QRect(10, 380, 131, 31))
         font = QtGui.QFont()
-        font.setPointSize(14)
+        font.setPointSize(12)
         font.setBold(True)
         self.exit_pushButton.setFont(font)
         self.exit_pushButton.setStyleSheet("QPushButton:hover {\n"
