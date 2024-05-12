@@ -7,7 +7,6 @@
 
 
 from PyQt6 import QtCore, QtGui, QtWidgets
-import sys
 
 
 class Ui_MainWindow(object):
@@ -28,10 +27,11 @@ class Ui_MainWindow(object):
         self.frame_login_main.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
         self.frame_login_main.setObjectName("frame_login_main")
         self.werhere_image_label = QtWidgets.QLabel(parent=self.frame_login_main)
-        self.werhere_image_label.setGeometry(QtCore.QRect(20, 30, 471, 71))
+        self.werhere_image_label.setGeometry(QtCore.QRect(15, 30, 471, 71))
         self.werhere_image_label.setStyleSheet("background-color: rgba(255, 255, 255, 0);")
         self.werhere_image_label.setText("")
         self.werhere_image_label.setPixmap(QtGui.QPixmap("images/werhere_image.png"))
+        self.werhere_image_label.setScaledContents(True)
         self.werhere_image_label.setObjectName("werhere_image_label")
         self.login_tabWidget = QtWidgets.QTabWidget(parent=self.frame_login_main)
         self.login_tabWidget.setGeometry(QtCore.QRect(30, 130, 421, 191))
@@ -49,7 +49,7 @@ class Ui_MainWindow(object):
         self.user_login = QtWidgets.QWidget()
         self.user_login.setObjectName("user_login")
         self.user_login_groupBox = QtWidgets.QGroupBox(parent=self.user_login)
-        self.user_login_groupBox.setGeometry(QtCore.QRect(0, 0, 391, 191))
+        self.user_login_groupBox.setGeometry(QtCore.QRect(10, 0, 391, 191))
         font = QtGui.QFont()
         font.setFamily("Comic Sans MS")
         font.setPointSize(10)
@@ -99,9 +99,9 @@ class Ui_MainWindow(object):
         font.setBold(True)
         self.password_label.setFont(font)
         self.password_label.setObjectName("password_label")
-        self.user_name_textEdit = QtWidgets.QTextEdit(parent=self.user_login_groupBox)
-        self.user_name_textEdit.setGeometry(QtCore.QRect(120, 30, 181, 31))
-        self.user_name_textEdit.setStyleSheet("QTextEdit:hover {\n"
+        self.user_username_lineEdit = QtWidgets.QLineEdit(parent=self.user_login_groupBox)
+        self.user_username_lineEdit.setGeometry(QtCore.QRect(130, 30, 131, 31))
+        self.user_username_lineEdit.setStyleSheet("QTextEdit:hover {\n"
 "\n"
 "                  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0,157, 255, 255), stop:1 rgba(30, 206, 255, 255));\n"
 "                  color: rgb(255, 255, 255);\n"
@@ -111,10 +111,10 @@ class Ui_MainWindow(object):
 "                    background-color: rgb(255, 255, 255);\n"
 "                    color: rgb(0, 0, 255);\n"
 "                    }")
-        self.user_name_textEdit.setObjectName("user_name_textEdit")
-        self.password_textEdit = QtWidgets.QTextEdit(parent=self.user_login_groupBox)
-        self.password_textEdit.setGeometry(QtCore.QRect(120, 70, 181, 31))
-        self.password_textEdit.setStyleSheet("QTextEdit:hover {\n"
+        self.user_username_lineEdit.setObjectName("user_username_lineEdit")
+        self.user_password_lineEdit_2 = QtWidgets.QLineEdit(parent=self.user_login_groupBox)
+        self.user_password_lineEdit_2.setGeometry(QtCore.QRect(130, 70, 131, 31))
+        self.user_password_lineEdit_2.setStyleSheet("QTextEdit:hover {\n"
 "\n"
 "                  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0,157, 255, 255), stop:1 rgba(30, 206, 255, 255));\n"
 "                  color: rgb(255, 255, 255);\n"
@@ -124,7 +124,8 @@ class Ui_MainWindow(object):
 "                    background-color: rgb(255, 255, 255);\n"
 "                    color: rgb(0, 0, 255);\n"
 "                    }")
-        self.password_textEdit.setObjectName("password_textEdit")
+        self.user_password_lineEdit_2.setEchoMode(QtWidgets.QLineEdit.EchoMode.Password)
+        self.user_password_lineEdit_2.setObjectName("user_password_lineEdit_2")
         self.login_tabWidget.addTab(self.user_login, "")
         self.admin_login = QtWidgets.QWidget()
         self.admin_login.setObjectName("admin_login")
@@ -168,19 +169,6 @@ class Ui_MainWindow(object):
 "                    color: rgb(0, 0, 255);\n"
 "                    }")
         self.admin_exit_pushButton.setObjectName("admin_exit_pushButton")
-        self.admin_user_name_textEdit = QtWidgets.QTextEdit(parent=self.admin_login_groupBox)
-        self.admin_user_name_textEdit.setGeometry(QtCore.QRect(120, 30, 181, 31))
-        self.admin_user_name_textEdit.setStyleSheet("QTextEdit:hover {\n"
-"\n"
-"                  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0,157, 255, 255), stop:1 rgba(30, 206, 255, 255));\n"
-"                  color: rgb(255, 255, 255);\n"
-"                  }\n"
-"\n"
-"QTextEdit:pressed {\n"
-"                    background-color: rgb(255, 255, 255);\n"
-"                    color: rgb(0, 0, 255);\n"
-"                    }")
-        self.admin_user_name_textEdit.setObjectName("admin_user_name_textEdit")
         self.admin_password_label = QtWidgets.QLabel(parent=self.admin_login_groupBox)
         self.admin_password_label.setGeometry(QtCore.QRect(20, 80, 71, 16))
         font = QtGui.QFont()
@@ -189,9 +177,17 @@ class Ui_MainWindow(object):
         font.setBold(True)
         self.admin_password_label.setFont(font)
         self.admin_password_label.setObjectName("admin_password_label")
-        self.admin_password_textEdit = QtWidgets.QTextEdit(parent=self.admin_login_groupBox)
-        self.admin_password_textEdit.setGeometry(QtCore.QRect(120, 70, 181, 31))
-        self.admin_password_textEdit.setStyleSheet("QTextEdit:hover {\n"
+        self.admin_user_name_label = QtWidgets.QLabel(parent=self.admin_login_groupBox)
+        self.admin_user_name_label.setGeometry(QtCore.QRect(20, 40, 71, 16))
+        font = QtGui.QFont()
+        font.setFamily("Comic Sans MS")
+        font.setPointSize(10)
+        font.setBold(True)
+        self.admin_user_name_label.setFont(font)
+        self.admin_user_name_label.setObjectName("admin_user_name_label")
+        self.admin_username_lineEdit_3 = QtWidgets.QLineEdit(parent=self.admin_login_groupBox)
+        self.admin_username_lineEdit_3.setGeometry(QtCore.QRect(130, 30, 131, 31))
+        self.admin_username_lineEdit_3.setStyleSheet("QTextEdit:hover {\n"
 "\n"
 "                  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0,157, 255, 255), stop:1 rgba(30, 206, 255, 255));\n"
 "                  color: rgb(255, 255, 255);\n"
@@ -201,15 +197,20 @@ class Ui_MainWindow(object):
 "                    background-color: rgb(255, 255, 255);\n"
 "                    color: rgb(0, 0, 255);\n"
 "                    }")
-        self.admin_password_textEdit.setObjectName("admin_password_textEdit")
-        self.admin_user_name_label = QtWidgets.QLabel(parent=self.admin_login_groupBox)
-        self.admin_user_name_label.setGeometry(QtCore.QRect(20, 40, 71, 16))
-        font = QtGui.QFont()
-        font.setFamily("Comic Sans MS")
-        font.setPointSize(10)
-        font.setBold(True)
-        self.admin_user_name_label.setFont(font)
-        self.admin_user_name_label.setObjectName("admin_user_name_label")
+        self.admin_username_lineEdit_3.setObjectName("admin_username_lineEdit_3")
+        self.admin_password_lineEdit_4 = QtWidgets.QLineEdit(parent=self.admin_login_groupBox)
+        self.admin_password_lineEdit_4.setGeometry(QtCore.QRect(130, 70, 131, 31))
+        self.admin_password_lineEdit_4.setStyleSheet("QTextEdit:hover {\n"
+"\n"
+"                  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0,157, 255, 255), stop:1 rgba(30, 206, 255, 255));\n"
+"                  color: rgb(255, 255, 255);\n"
+"                  }\n"
+"\n"
+"QTextEdit:pressed {\n"
+"                    background-color: rgb(255, 255, 255);\n"
+"                    color: rgb(0, 0, 255);\n"
+"                    }")
+        self.admin_password_lineEdit_4.setObjectName("admin_password_lineEdit_4")
         self.login_tabWidget.addTab(self.admin_login, "")
         self.welkomTextEdit_2 = QtWidgets.QTextEdit(parent=self.frame_login_main)
         self.welkomTextEdit_2.setGeometry(QtCore.QRect(0, 330, 501, 31))
@@ -240,14 +241,12 @@ class Ui_MainWindow(object):
         self.login_tabWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
-
 # Push Buton tıklama
 
         self.admin_login_pushButton.clicked.connect(self.admin_login_clicked)
         self.admin_exit_pushButton.clicked.connect(self.admin_exit_clicked)
         self.user_login_pushButton.clicked.connect(self.user_login_clicked)
         self.user_exit_pushButton.clicked.connect(self.user_exit_clicked)
-
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
@@ -256,21 +255,16 @@ class Ui_MainWindow(object):
         self.user_exit_pushButton.setText(_translate("MainWindow", "Exit"))
         self.user_name_label.setText(_translate("MainWindow", "Username"))
         self.password_label.setText(_translate("MainWindow", "Password"))
-        self.user_name_textEdit.setToolTip(_translate("MainWindow", "<html><head/><body><p align=\"center\">Username</p></body></html>"))
-        self.user_name_textEdit.setWhatsThis(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"hr { height: 1px; border-width: 0; }\n"
-"li.unchecked::marker { content: \"\\2610\"; }\n"
-"li.checked::marker { content: \"\\2612\"; }\n"
-"</style></head><body style=\" font-family:\'Segoe UI\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
+        self.user_username_lineEdit.setPlaceholderText(_translate("MainWindow", "Username"))
+        self.user_password_lineEdit_2.setPlaceholderText(_translate("MainWindow", "Password"))
         self.login_tabWidget.setTabText(self.login_tabWidget.indexOf(self.user_login), _translate("MainWindow", "User"))
         self.admin_login_groupBox.setTitle(_translate("MainWindow", "Admin Login"))
         self.admin_login_pushButton.setText(_translate("MainWindow", "Login"))
         self.admin_exit_pushButton.setText(_translate("MainWindow", "Exit"))
         self.admin_password_label.setText(_translate("MainWindow", "Password"))
         self.admin_user_name_label.setText(_translate("MainWindow", "Username"))
+        self.admin_username_lineEdit_3.setPlaceholderText(_translate("MainWindow", "Username"))
+        self.admin_password_lineEdit_4.setPlaceholderText(_translate("MainWindow", "Password"))
         self.login_tabWidget.setTabText(self.login_tabWidget.indexOf(self.admin_login), _translate("MainWindow", "Admin"))
         self.welkomTextEdit_2.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
@@ -279,7 +273,7 @@ class Ui_MainWindow(object):
 "li.unchecked::marker { content: \"\\2610\"; }\n"
 "li.checked::marker { content: \"\\2612\"; }\n"
 "</style></head><body style=\" font-family:\'Segoe UI\'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">copyright@WearehereAcademy(2024)</span></p></body></html>"))
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">copyright@WearehereAcademy-2024</span></p></body></html>"))
         self.welkomTextEdit.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -289,14 +283,14 @@ class Ui_MainWindow(object):
 "</style></head><body style=\" font-family:\'Segoe UI\'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:700;\">Welcome to</span></p></body></html>"))
 
-
 # Butonların Fonsiyonlarının tanımlandığı yer.
 
     def admin_login_clicked(self):
         from preference_admin_menu import Ui_admin_pref_men_MainWindow
         self.MainWindow= QtWidgets.QMainWindow()
         self.ui =Ui_admin_pref_men_MainWindow()
-        self.ui.setupUi(MainWindow)    
+        self.ui.setupUi(self.MainWindow) 
+        self.MainWindow.show()    
 
     def admin_exit_clicked(self):
         from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton
@@ -307,7 +301,8 @@ class Ui_MainWindow(object):
         from preference_menu import Ui_MainWindow
         self.MainWindow= QtWidgets.QMainWindow()
         self.ui =Ui_MainWindow()
-        self.ui.setupUi(MainWindow)          
+        self.ui.setupUi(self.MainWindow) 
+        self.MainWindow.show()         
         
 
 
