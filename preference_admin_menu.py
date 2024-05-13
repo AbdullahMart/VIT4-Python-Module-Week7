@@ -173,7 +173,8 @@ class Ui_admin_pref_men_MainWindow(object):
         
 
     def Exit_clicked(self):
-        QApplication.instance().quit()                     
+        from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton
+        QApplication.instance().quit()                
 
 
 if __name__ == "__main__":
