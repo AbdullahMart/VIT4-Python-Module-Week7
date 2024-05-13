@@ -12,15 +12,15 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_mentor_interviews_page_MainWindow(object):
     def setupUi(self, mentor_interviews_page_MainWindow):
         mentor_interviews_page_MainWindow.setObjectName("mentor_interviews_page_MainWindow")
-        mentor_interviews_page_MainWindow.resize(1450, 1000)
-        mentor_interviews_page_MainWindow.setMinimumSize(QtCore.QSize(1450, 1000))
-        mentor_interviews_page_MainWindow.setMaximumSize(QtCore.QSize(1450, 1000))
+        mentor_interviews_page_MainWindow.resize(1100, 750)
+        mentor_interviews_page_MainWindow.setMinimumSize(QtCore.QSize(1100, 750))
+        mentor_interviews_page_MainWindow.setMaximumSize(QtCore.QSize(1100, 750))
         self.centralwidget = QtWidgets.QWidget(parent=mentor_interviews_page_MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.frame = QtWidgets.QFrame(parent=self.centralwidget)
-        self.frame.setGeometry(QtCore.QRect(50, 10, 1350, 900))
-        self.frame.setMinimumSize(QtCore.QSize(1350, 900))
-        self.frame.setMaximumSize(QtCore.QSize(1350, 900))
+        self.frame.setGeometry(QtCore.QRect(20, 10, 1050, 700))
+        self.frame.setMinimumSize(QtCore.QSize(1050, 700))
+        self.frame.setMaximumSize(QtCore.QSize(1050, 700))
         font = QtGui.QFont()
         font.setPointSize(14)
         font.setBold(True)
@@ -29,45 +29,45 @@ class Ui_mentor_interviews_page_MainWindow(object):
         self.frame.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
         self.frame.setObjectName("frame")
         self.Werhere_imaj_label = QtWidgets.QLabel(parent=self.frame)
-        self.Werhere_imaj_label.setGeometry(QtCore.QRect(100, 0, 441, 111))
+        self.Werhere_imaj_label.setGeometry(QtCore.QRect(13, 0, 441, 111))
         self.Werhere_imaj_label.setText("")
         self.Werhere_imaj_label.setPixmap(QtGui.QPixmap("werhere_image.png"))
         self.Werhere_imaj_label.setObjectName("Werhere_imaj_label")
         self.label_2 = QtWidgets.QLabel(parent=self.frame)
-        self.label_2.setGeometry(QtCore.QRect(800, 10, 441, 111))
+        self.label_2.setGeometry(QtCore.QRect(600, 0, 441, 111))
         self.label_2.setText("")
         self.label_2.setPixmap(QtGui.QPixmap("werhere_image.png"))
         self.label_2.setObjectName("label_2")
         self.All_Interviews_pushButton = QtWidgets.QPushButton(parent=self.frame)
-        self.All_Interviews_pushButton.setGeometry(QtCore.QRect(100, 173, 281, 51))
+        self.All_Interviews_pushButton.setGeometry(QtCore.QRect(13, 140, 281, 51))
         self.All_Interviews_pushButton.setStyleSheet("QPushButton:hover {\n"
 "                  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0,157, 255, 255), stop:1 rgba(30, 206, 255, 255));\n"
 "                  color: rgb(255, 255, 255);\n"
 "                  }")
         self.All_Interviews_pushButton.setObjectName("All_Interviews_pushButton")
         self.Search_pushButton = QtWidgets.QPushButton(parent=self.frame)
-        self.Search_pushButton.setGeometry(QtCore.QRect(560, 173, 81, 51))
+        self.Search_pushButton.setGeometry(QtCore.QRect(970, 150, 71, 51))
         self.Search_pushButton.setStyleSheet("QPushButton:hover {\n"
 "                  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0,157, 255, 255), stop:1 rgba(30, 206, 255, 255));\n"
 "                  color: rgb(255, 255, 255);\n"
 "                  }")
         self.Search_pushButton.setObjectName("Search_pushButton")
         self.Preferences_pushButton = QtWidgets.QPushButton(parent=self.frame)
-        self.Preferences_pushButton.setGeometry(QtCore.QRect(100, 330, 201, 51))
+        self.Preferences_pushButton.setGeometry(QtCore.QRect(13, 200, 201, 51))
         self.Preferences_pushButton.setStyleSheet("QPushButton:hover {\n"
 "                  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0,157, 255, 255), stop:1 rgba(30, 206, 255, 255));\n"
 "                  color: rgb(255, 255, 255);\n"
 "                  }")
         self.Preferences_pushButton.setObjectName("Preferences_pushButton")
         self.Exit_pushButton = QtWidgets.QPushButton(parent=self.frame)
-        self.Exit_pushButton.setGeometry(QtCore.QRect(560, 330, 71, 51))
+        self.Exit_pushButton.setGeometry(QtCore.QRect(13, 250, 71, 51))
         self.Exit_pushButton.setStyleSheet("QPushButton:hover {\n"
 "                  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0,157, 255, 255), stop:1 rgba(30, 206, 255, 255));\n"
 "                  color: rgb(255, 255, 255);\n"
 "                  }")
         self.Exit_pushButton.setObjectName("Exit_pushButton")
         self.lineEdit_2 = QtWidgets.QLineEdit(parent=self.frame)
-        self.lineEdit_2.setGeometry(QtCore.QRect(662, 173, 581, 51))
+        self.lineEdit_2.setGeometry(QtCore.QRect(470, 150, 491, 51))
         font = QtGui.QFont()
         font.setPointSize(20)
         font.setBold(True)
@@ -83,7 +83,7 @@ class Ui_mentor_interviews_page_MainWindow(object):
         self.lineEdit_2.setText("")
         self.lineEdit_2.setObjectName("lineEdit_2")
         self.comboBox = QtWidgets.QComboBox(parent=self.frame)
-        self.comboBox.setGeometry(QtCore.QRect(662, 260, 591, 32))
+        self.comboBox.setGeometry(QtCore.QRect(450, 230, 591, 32))
         self.comboBox.setObjectName("comboBox")
         self.comboBox.addItem("")
         self.comboBox.addItem("")
@@ -94,7 +94,7 @@ class Ui_mentor_interviews_page_MainWindow(object):
         self.comboBox.addItem("")
         self.comboBox.addItem("")
         self.tableWidget = QtWidgets.QTableWidget(parent=self.frame)
-        self.tableWidget.setGeometry(QtCore.QRect(100, 420, 1151, 441))
+        self.tableWidget.setGeometry(QtCore.QRect(13, 310, 1021, 341))
         self.tableWidget.setObjectName("tableWidget")
         self.tableWidget.setColumnCount(6)
         self.tableWidget.setRowCount(0)
@@ -113,9 +113,9 @@ class Ui_mentor_interviews_page_MainWindow(object):
         self.tableWidget.setHorizontalHeaderItem(4, item)
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget.setHorizontalHeaderItem(5, item)
-        self.tableWidget.horizontalHeader().setDefaultSectionSize(190)
+        self.tableWidget.horizontalHeader().setDefaultSectionSize(160)
         self.Mentormenu_label = QtWidgets.QLabel(parent=self.frame)
-        self.Mentormenu_label.setGeometry(QtCore.QRect(550, 40, 231, 51))
+        self.Mentormenu_label.setGeometry(QtCore.QRect(400, 40, 231, 51))
         font = QtGui.QFont()
         font.setPointSize(20)
         font.setBold(True)
@@ -123,7 +123,7 @@ class Ui_mentor_interviews_page_MainWindow(object):
         self.Mentormenu_label.setObjectName("Mentormenu_label")
         mentor_interviews_page_MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=mentor_interviews_page_MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 1450, 43))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1100, 29))
         self.menubar.setObjectName("menubar")
         mentor_interviews_page_MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(parent=mentor_interviews_page_MainWindow)
@@ -132,9 +132,7 @@ class Ui_mentor_interviews_page_MainWindow(object):
 
         self.retranslateUi(mentor_interviews_page_MainWindow)
         QtCore.QMetaObject.connectSlotsByName(mentor_interviews_page_MainWindow)
-
-#Push Button
-
+        
         self.Exit_pushButton.clicked.connect(self.Exit_clicked)
         self.All_Interviews_pushButton.clicked.connect(self.All_Interviews_clicked)
         self.Search_pushButton.clicked.connect(self.Search_clicked)
@@ -169,7 +167,7 @@ class Ui_mentor_interviews_page_MainWindow(object):
         item.setText(_translate("mentor_interviews_page_MainWindow", "Commends"))
         self.Mentormenu_label.setText(_translate("mentor_interviews_page_MainWindow", "                  Mentor Menu"))
 
-#Transitions and explainations
+ #Transitions and explainations
 
     def Exit_clicked(self):
         from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton
@@ -186,6 +184,7 @@ class Ui_mentor_interviews_page_MainWindow(object):
 
     def Search_clicked(self):
         print("Now you are looking at Search")
+
 
 
 if __name__ == "__main__":
